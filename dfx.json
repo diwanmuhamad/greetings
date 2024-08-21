@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "greetings_backend": {
+      "main": "src/greetings_backend/main.mo",
+      "type": "motoko"
+    },
+    "greetings_frontend": {
+      "dependencies": [
+        "greetings_backend"
+      ],
+      "source": [
+        "src/greetings_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "greetings_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
